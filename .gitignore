@@ -1,0 +1,13 @@
+node_modules
+*.log
+__ignore__
+__report__
+__artifacts__
+.env*
+dist
+build
+
+.DS_Store
+.cache-pnpm
+.cache-eslint
+.dockerignore
