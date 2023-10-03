@@ -7,8 +7,8 @@ const PORT = process.env.PORT || 3000;
 
 // @ts-ignore - I don't want to deal with the type of `mode`
 export default defineConfig(({ mode /* , command */ }) => ({
-  publicDir: './public', // default is "public".
-  base: '/', // default value is '/'.
+  publicDir: './public',
+  base: '/books/',
   css: {
     modules: {
       generateScopedName: mode === 'development' ? '[name].[local].[hash:base64:3]' : '[hash:base64:7]',
@@ -31,7 +31,7 @@ export default defineConfig(({ mode /* , command */ }) => ({
   logLevel: 'info',
   cacheDir: './node_modules/.vite-my-cache',
   build: {
-    outDir: '../dist',
+    outDir: './build',
     sourcemap: true,
   },
   preview: { port: 3001, strictPort: true, open: true },
