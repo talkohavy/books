@@ -1,2 +1,0 @@
-import{j as t}from"./index-ab85d32d.js";import{d as e}from"./index-62d48765.js";function o(){return{data:e}}function n(){const{data:a}=o();return t.jsxs("div",{className:"p-10 dark:text-white",children:[t.jsx("div",{className:"mb-5 text-5xl font-bold",children:"Favorites List"}),a.length?a.map(s=>t.jsxs("div",{children:["ID: ",s]},s)):t.jsx("div",{className:"text-lg",children:"You have 0 books on your favorites list"})]})}export{n as default};
-//# sourceMappingURL=index-2f2fb58b.js.map
