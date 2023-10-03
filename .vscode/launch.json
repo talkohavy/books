@@ -41,23 +41,6 @@
       "outputCapture": "std", // This is to be able to also capture logger outputs
       "sourceMaps": true,
       "env": { "ENV_FILE": "development" }
-    },
-    // -----------
-    // api-gateway
-    // -----------
-    {
-      "name": "api-gateway",
-      "type": "node",
-      "request": "launch",
-      "cwd": "${workspaceFolder}/apps/api-gateway/",
-      // "runtimeArgs": ["--watch"],
-      "runtimeExecutable": "nodemon",
-      // "runtimeArgs": ["--config", "${cwd}/apps/api-gateway/nodemon.json"], // <-- flags to add to the runtimeExecutable
-      "program": "src/index.js",
-      "restart": true, // Try to reconnect to a program if we lose connection. If set to `true`, we'll try once every second, forever.
-      "outputCapture": "std", // This is to be able to also capture logger outputs
-      "sourceMaps": true,
-      "env": { "ENV_FILE": "development" }
     }
   ]
 }
